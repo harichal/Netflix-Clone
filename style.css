@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins" sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/header-image.png');
+
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    background: #db0001;
+    height: 25px;
+    width: 80px;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Poppins";
+    font-weight: bold;
+    padding: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid;
+    padding: 7px 10px;
+}
+.down-icon{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    line-height: 50px;
+    max-width: 650px;
+}
+.header-content h1{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 60px;
+    color:#fff;
+    text-align: center;
+}
+form{
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    
+}
+.input-form{
+    width: 450px;
+    height:8vh ;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background: transparent;
+}
+form button{
+    background: #db0001;
+    margin-left: 20px;
+    padding: 20px 10px;
+    height: 8vh;
+    width: 150px;
+    font-size: large;
+    color: #fff;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 4px;
+}
+/*-------features*/
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+/* ------ faq-------*/
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.accordion input[type='radio']:checked + label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+/* -----------------footer*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .lang-btn{
+    color: #fff;
+    border:1px solid #fff;
+}
